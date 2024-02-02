@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    color: #00adef;
+    padding: 2rem 0 1rem 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    height: 100vh;
+    /* padding-top: 50px; */
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    background: cornflowerblue;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/* footer{
+    margin-top: 3rem;
+    background-color: cornflowerblue;
+    padding: 50px 0 15px;
+    position: fixed;
+} */
+
+footer {
+    background-color: cornflowerblue;
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    width: 100%; /* Faz com que o footer ocupe toda a largura */
+    bottom: 0; /* Alinha o footer ao final da página */
+    left: 0; /* Alinha o footer à esquerda */
+}
+
+/* --- */
+
+.principal{
+    background-color: #007bff;
+    min-height: 15vh;
+}
+
+/* INICIO CARD */
+
+.card{
+    margin: 2px auto;
+}
+
+.card-body{
+    padding-top: 0;
+    text-align: center;
+}
+
+.card-img-top {
+    display: block;
+    margin: 0 auto; /* Isso centraliza a imagem horizontalmente */
+    margin: 10px auto;
+    max-height: 96px;
+    max-width: 96px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.card p{
+    font-size: 12px;
+    color: #777777;
+}
+
+.card-body strong{
+    color: #197abb;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+
+.card-body span{
+    color: #197abb;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+/* MEDIA QUERIOES */
+
+    @media screen and (max-width: 767px) {
+
+        #fundo-produtos {
+            background-color: #ECECEC; /* Define a cor de fundo como preta para dispositivos móveis */
+        }
+
+        .row {
+            display: flex; /* Ativa o modelo de layout flexível */
+            flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
+        }
+
+        .card {
+            flex: 0 0 50%; /* Define a largura de cada card para 50% da largura da linha */
+            max-width: 50%; /* Define a largura máxima de cada card como 50% */
+            box-sizing: border-box; /* Inclui o padding e a borda na largura do elemento */
+        }
+
+        .card-text strong {
+            white-space: nowrap; /* Impede a quebra de linha */
+        }
+
+        h2{
+            font-size: 26px;
+            text-align: center;
+        }
+
+    }
