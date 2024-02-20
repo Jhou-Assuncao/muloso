@@ -143,11 +143,6 @@ footer ul li{
 
 @media screen and (max-width: 767px) {
 
-    #fundo-produtos {
-        background-color: #ECECEC;
-        /* Define a cor de fundo como preta para dispositivos móveis */
-    }
-
     .row {
         display: flex;
         /* Ativa o modelo de layout flexível */
