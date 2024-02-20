@@ -3,8 +3,8 @@
     margin: 0;
 }
 
-h2{
-    color: #00adef;
+h2 {
+    color: #0072ed;
     padding: 2rem 0 1rem 0;
 }
 
@@ -19,7 +19,7 @@ body {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 1.5px;
-    background: cornflowerblue;
+    background: white
 }
 
 .fixed-top {
@@ -28,6 +28,7 @@ body {
     right: 0;
     left: 0;
     z-index: 1030;
+    border-bottom: 1px solid #2828280e;
 }
 
 /* footer{
@@ -38,50 +39,57 @@ body {
 } */
 
 footer {
-    background-color: cornflowerblue;
-    color: white; /* Cor do texto */
-    padding: 20px 0; /* Espaçamento interno superior e inferior */
-    width: 100%; /* Faz com que o footer ocupe toda a largura */
-    bottom: 0; /* Alinha o footer ao final da página */
-    left: 0; /* Alinha o footer à esquerda */
+    background-color: #0072ed;
+    color: white;
+    /* Cor do texto */
+    padding: 20px 0;
+    /* Espaçamento interno superior e inferior */
+    width: 100%;
+    /* Faz com que o footer ocupe toda a largura */
+    bottom: 0;
+    /* Alinha o footer ao final da página */
+    left: 0;
+    /* Alinha o footer à esquerda */
 }
 
 /* --- */
 
-.principal{
-    background-color: #007bff;
+.principal {
+    background-color: white;
     min-height: 15vh;
 }
 
 /* INICIO CARD */
 
-.card{
+.card {
     margin: 2px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.card-body{
+.card-body {
     padding-top: 0;
     text-align: center;
 }
 
 .card-img-top {
     display: block;
-    margin: 0 auto; /* Isso centraliza a imagem horizontalmente */
+    margin: 0 auto;
+    /* Isso centraliza a imagem horizontalmente */
     margin: 10px auto;
     max-height: 96px;
     max-width: 96px;
 }
 
-.card a{
+.card a {
     text-decoration: none;
 }
 
-.card p{
+.card p {
     font-size: 12px;
     color: #777777;
 }
 
-.card-body strong{
+.card-body strong {
     color: #197abb;
     font-size: 20px;
     letter-spacing: 0.5px;
@@ -89,42 +97,90 @@ footer {
 }
 
 
-.card-body span{
+.card-body span {
     color: #197abb;
     font-size: 12px;
     letter-spacing: 0.5px;
 }
 
+.cupom-principal{
+    /* white-space: nowrap; */
+    font-size: 13px;
+    border: 2px solid #0072ed23;
+    border-radius: 7px;
+}
+
+.cupons p {
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+
+.cupons p i {
+    color: #0072ed;
+    font-size: 1.3em;
+    margin-right: 7px;
+}
+
+.cupons p a {
+    font-size: 12px;
+    text-align: end;
+    text-decoration: none;
+}
 
 
+footer ul{
+    list-style: none;
+    text-align: center;
+}
 
+footer ul li{
+    display: inline-block;
+    margin: 30px;
+}
 
-/* MEDIA QUERIOES */
+/* MEDIA QUERIES */
 
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
-        #fundo-produtos {
-            background-color: #ECECEC; /* Define a cor de fundo como preta para dispositivos móveis */
-        }
-
-        .row {
-            display: flex; /* Ativa o modelo de layout flexível */
-            flex-wrap: wrap; /* Permite que os itens sejam quebrados em várias linhas */
-        }
-
-        .card {
-            flex: 0 0 50%; /* Define a largura de cada card para 50% da largura da linha */
-            max-width: 50%; /* Define a largura máxima de cada card como 50% */
-            box-sizing: border-box; /* Inclui o padding e a borda na largura do elemento */
-        }
-
-        .card-text strong {
-            white-space: nowrap; /* Impede a quebra de linha */
-        }
-
-        h2{
-            font-size: 26px;
-            text-align: center;
-        }
-
+    #fundo-produtos {
+        background-color: #ECECEC;
+        /* Define a cor de fundo como preta para dispositivos móveis */
     }
+
+    .row {
+        display: flex;
+        /* Ativa o modelo de layout flexível */
+        flex-wrap: wrap;
+        /* Permite que os itens sejam quebrados em várias linhas */
+    }
+
+    .card {
+        flex: 0 0 100%;
+        /* Define a largura de cada card para 50% da largura da linha */
+        max-width: 100%;
+        /* Define a largura máxima de cada card como 50% */
+        box-sizing: border-box;
+        /* Inclui o padding e a borda na largura do elemento */
+    }
+
+    .card-text strong {
+        white-space: nowrap;
+        /* Impede a quebra de linha */
+    }
+
+    h2 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .cupons {
+        border: 1px solid rgba(128, 128, 128, 0.158);
+        margin-bottom: 25px;
+    }
+
+    .logo-footer{
+        text-align: center;
+    }
+
+}
